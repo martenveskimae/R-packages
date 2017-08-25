@@ -34,6 +34,6 @@ sub = dat.imports %>%
   graph.edgelist() %>%
   induced_subgraph(., which(names(V(.))%in%c("R",base))) %>%
   subgraph.centrality()
-save(sub, file="sub.Rda")
 
+save(sub, file="sub.Rda")
 save(dat.imports, file="dat.Rda")
